@@ -1,0 +1,2 @@
+This Nagios plugin checks if tests of a Rails application are passing. See INSTALL.debian for instructions.
+Another way is to run this plugin on a remote application server and use `check_by_ssh` or `NRPE` on the server.

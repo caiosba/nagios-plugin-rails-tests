@@ -1,0 +1,10 @@
+If you installed Nagios as a Debian package, follow the steps below:
+
+1. Nagios will be running at http://yourhostname/nagios3
+
+2. Put check_rails_tests.sh wherever you want, but edit the other files of the plugin to point to the right place
+   (ideally it should be on the $PATH)
+
+3. Move the files located in rails_tests.debian to their correct place: /etc/nagios-plugins/config/rails_tests.cfg
+
+4. Restart Nagios: cd /etc/nagios3 && nagios3 -v nagios.cfg && /etc/init.d/nagios3 restart
